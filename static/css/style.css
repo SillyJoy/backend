@@ -1,0 +1,111 @@
+.button_text {
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-family: Inter,system-ui,-apple-system,sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.text_feed {
+    left: 45px;
+    top: 910px;
+}
+
+.text_add {
+    left: 191px;
+    top: 910px;
+}
+
+.text_list {
+    left: 335px;
+    top: 910px;
+}
+
+.description {
+    width: 385px;
+    height: 60px;
+    left: 27px;
+    top: 774px;
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    font-family: Inter,system-ui,-apple-system,sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.side_text {
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    font-family: Inter,system-ui,-apple-system,sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.likes {
+    left: 371px;
+    top: 660px;
+}
+
+.coefficient {
+    left: 328px;
+    top: 575px;
+}
+
+.price {
+    left: 348px;
+    top: 490px;
+}
+
+.next {
+    left: 354px;
+    top: 749px;
+}
+
+.more {
+    left: 27px;
+    top: 834px;
+}
+
+.frame {
+    width: 440px;
+    height: 956px;
+    position: relative;
+    background: white;
+    overflow: hidden;
+}
+
+.background {
+    width: 440px;
+    height: 230px;
+    left: 0;
+    top: 726px;
+    position: absolute;
+    opacity: 0.60;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 55%);
+}
+
+.active {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25) inset !important;
+}
+
+.bottom_line {
+    width: 405px;
+    height: 33px;
+    left: 18px;
+    top: 910px;
+    position: absolute;
+    background: #11171E;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.buttons {
+    position: absolute;
+    background: #C4FF5C;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
