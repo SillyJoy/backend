@@ -1,9 +1,10 @@
 from fastapi import APIRouter, Request
 from fastapi.templating import Jinja2Templates
-from data.collections import insulators_db
+from data.collections import thermal_insulators_db
 
 router = APIRouter()
 templates = Jinja2Templates(directory="templates")
+id = 0
 
 
 @router.get("/")
@@ -11,16 +12,23 @@ def get_catalog(request: Request):
     return templates.TemplateResponse(
         request=request,
         name="feed.html",
-        context={"hotels": insulators_db}
+        context={"insulator": thermal_insulators_db[id], "liked": len(thermal_insulators_db[id]["likes"])}
     )
 
 
-@router.get("/hotel/{hotel_id}")
-def get_hotel_detail(request: Request, hotel_id: int):
-    hotel = next((h for h in insulators_db if h["id"] == hotel_id), None)
-
+@router.get("/add")
+def get_catalog(request: Request):
     return templates.TemplateResponse(
         request=request,
-        name="hotel.html",
-        context={"hotel": hotel}
+        name="add.html",
+        context={"insulator": thermal_insulators_db[id], "liked": len(thermal_insulators_db[id]["likes"])}
+    )
+
+
+@router.get("/list")
+def get_catalog(request: Request):
+    return templates.TemplateResponse(
+        request=request,
+        name="list.html",
+        context={"db": thermal_insulators_db, "liked": len(thermal_insulators_db[id]["likes"])}
     )
