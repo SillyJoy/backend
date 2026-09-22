@@ -1,6 +1,6 @@
 thermal_insulators_db = [
     {
-        "id": 1,
+        "id": 0,
         "title": "Rockwool Optima",
         "price": 2500,
         "coefficient": 38,
@@ -11,7 +11,7 @@ thermal_insulators_db = [
         "likes": [100, 101, 103]
     },
     {
-        "id": 2,
+        "id": 1,
         "title": "DiROCK Аляска",
         "price": 790,
         "coefficient": 36,
@@ -22,7 +22,7 @@ thermal_insulators_db = [
         "likes": [102, 106]
     },
     {
-        "id": 3,
+        "id": 2,
         "title": "Технониколь Роклайт",
         "price": 4000,
         "coefficient": 32,
@@ -33,7 +33,7 @@ thermal_insulators_db = [
         "likes": [109]
     },
     {
-        "id": 4,
+        "id": 3,
         "title": "ТеплоKnauf Коттедж",
         "price": 2239,
         "coefficient": 36,
